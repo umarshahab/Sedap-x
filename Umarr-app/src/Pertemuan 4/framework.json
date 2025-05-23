@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces.",
+      "details": {
+        "developer": "Meta (Facebook)",
+        "releaseYear": 2013,
+        "officialWebsite": "https://react.dev/"
+      },
+      "tags": ["JavaScript", "Library", "UI", "Component-Based"]
+    },
+    {
+      "id": 2,
+      "name": "Vue",
+      "description": "The Progressive JavaScript Framework.",
+      "details": {
+        "developer": "Evan You",
+        "releaseYear": 2014,
+        "officialWebsite": "https://vuejs.org/"
+      },
+      "tags": ["JavaScript", "Framework", "Reactive", "Lightweight"]
+    },
+    {
+      "id": 3,
+      "name": "Angular",
+      "description": "One framework. Mobile & desktop.",
+      "details": {
+        "developer": "Google",
+        "releaseYear": 2010,
+        "officialWebsite": "https://angular.io/"
+      },
+      "tags": ["JavaScript", "Framework", "TypeScript", "Enterprise"]
+    },
+    {
+      "id": 4,
+      "name": "Svelte",
+      "description": "Cybernetically enhanced web apps.",
+      "details": {
+        "developer": "Rich Harris",
+        "releaseYear": 2016,
+        "officialWebsite": "https://svelte.dev/"
+      },
+      "tags": ["JavaScript", "Compiler", "Reactive", "Lightweight"]
+    },
+    {
+      "id": 5,
+      "name": "Next.js",
+      "description": "The React Framework for Production.",
+      "details": {
+        "developer": "Vercel",
+        "releaseYear": 2016,
+        "officialWebsite": "https://nextjs.org/"
+      },
+      "tags": ["React", "Framework", "SSR", "Static Generation"]
+    },
+    {
+      "id": 6,
+      "name": "Nuxt.js",
+      "description": "The Intuitive Vue Framework.",
+      "details": {
+        "developer": "Nuxt Labs",
+        "releaseYear": 2016,
+        "officialWebsite": "https://nuxt.com/"
+      },
+      "tags": ["Vue", "Framework", "SSR", "Static Generation"]
+    },
+    {
+      "id": 7,
+      "name": "Gatsby",
+      "description": "Fast in every way that matters.",
+      "details": {
+        "developer": "Gatsby Inc.",
+        "releaseYear": 2015,
+        "officialWebsite": "https://www.gatsbyjs.com/"
+      },
+      "tags": ["React", "Static Site", "SEO", "GraphQL"]
+    },
+    {
+      "id": 8,
+      "name": "Ember",
+      "description": "A framework for ambitious web developers.",
+      "details": {
+        "developer": "Ember Core Team",
+        "releaseYear": 2011,
+        "officialWebsite": "https://emberjs.com/"
+      },
+      "tags": ["JavaScript", "Framework", "Convention over Configuration"]
+    },
+    {
+      "id": 9,
+      "name": "Meteor",
+      "description": "Build apps fast, simple, scalable.",
+      "details": {
+        "developer": "Meteor Software",
+        "releaseYear": 2012,
+        "officialWebsite": "https://www.meteor.com/"
+      },
+      "tags": ["Full-Stack", "JavaScript", "Realtime", "Web & Mobile"]
+    },
+    {
+      "id": 10,
+      "name": "Backbone.js",
+      "description": "Give your JS app some Backbone.",
+      "details": {
+        "developer": "Jeremy Ashkenas",
+        "releaseYear": 2010,
+        "officialWebsite": "https://backbonejs.org/"
+      },
+      "tags": ["JavaScript", "Library", "MVC", "Lightweight"]
+    }
+  ]
+  

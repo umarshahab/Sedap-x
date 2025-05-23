@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Ayam Geprek", "price": "Rp 25.000", "image": "/images/ayam-geprek.jpg" },
+  { "id": 2, "name": "Nasi Goreng Spesial", "price": "Rp 20.000", "image": "/images/nasi-goreng.jpg" },
+  { "id": 3, "name": "Sate Ayam", "price": "Rp 30.000", "image": "/images/sate-ayam.jpg" }
+]
