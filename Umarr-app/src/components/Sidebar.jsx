@@ -1,9 +1,16 @@
 import { CgUserList } from "react-icons/cg"; 
-import { RiCustomerService2Line } from "react-icons/ri"; 
-import { MdReorder } from "react-icons/md"; 
-import { RiDashboardFill } from "react-icons/ri"; 
-import { Link } from "react-router-dom";
+import { RiCustomerService2Line, RiDashboardFill } from "react-icons/ri"; 
+import { MdReorder, MdFastfood } from "react-icons/md"; 
+import { NavLink } from "react-router-dom";
+
 export default function Sidebar() {
+  const menuClass = ({ isActive }) =>
+    `flex cursor-pointer items-center gap-2 rounded-xl p-4 font-medium ${
+      isActive
+        ? "bg-green-200 text-hijau font-extrabold"
+        : "text-gray-600 hover:bg-green-200 hover:text-hijau hover:font-extrabold"
+    }`;
+
   return (
     <div
       id="sidebar"
@@ -11,27 +18,44 @@ export default function Sidebar() {
     >
       {/* Logo */}
       <div id="sidebar-logo" className="flex flex-col">
-        <span className="font-poppins font-[1000] text-[48px]">Sedap<b className="text-green-500">x</b></span>
-        <span className="text-gray-400 font-semibold font-barlow">Modern Admin Dashboard</span>
+        <span className="font-poppins font-[1000] text-[48px]">
+          Sedap<b className="text-green-500">x</b>
+        </span>
+        <span className="text-gray-400 font-semibold font-barlow">
+          Modern Admin Dashboard
+        </span>
       </div>
 
       {/* List Menu */}
-      <div id="sidebar-menu">
-                <ul id="menu-list">
-                    <li>
-	                    <Link id="menu-1" to="/" className="hover:text-hijau flex cursor-pointer items-center gap-2 rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold"><RiDashboardFill />Dashboard</Link>
-	                  </li>
-                    <li>
-	                    <Link id="menu-2" to="/orders" className="hover:text-hijau flex cursor-pointer items-center gap-2 rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold"><MdReorder />Orders</Link>
-	                  </li>
-	                  <li>
-	                    <Link id="menu-3" to="/customers" className="hover:text-hijau flex cursor-pointer items-center gap-2 rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold"><RiCustomerService2Line />Customers</Link>
-	                  </li>
-	                  <li>
-	                    <Link id="menu-4" to="/user" className="hover:text-hijau flex cursor-pointer items-center gap-2 rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold"><CgUserList />User List</Link>
-	                  </li>
-                </ul>
-            </div>
+      <div id="sidebar-menu" className="mt-10">
+        <ul id="menu-list" className="space-y-2">
+          <li>
+            <NavLink to="/" className={menuClass}>
+              <RiDashboardFill /> Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/orders" className={menuClass}>
+              <MdReorder /> Orders
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/customers" className={menuClass}>
+              <RiCustomerService2Line /> Customers
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/user" className={menuClass}>
+              <CgUserList /> User List
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/products" className={menuClass}>
+              <MdFastfood /> Products
+            </NavLink>
+          </li>
+        </ul>
+      </div>
 
       {/* Footer */}
       <div id="sidebar-footer" className="mt-auto">
@@ -49,8 +73,10 @@ export default function Sidebar() {
             </div>
           </div>
           <img
-            id="footer-avatar" className="w-20 rounded-full"
+            id="footer-avatar"
+            className="w-20 rounded-full ml-auto"
             src="https://avatar.iran.liara.run/public/28"
+            alt="Avatar"
           />
         </div>
         <span id="footer-brand" className="font-bold text-gray-400">
