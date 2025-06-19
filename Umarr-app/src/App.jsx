@@ -3,6 +3,7 @@ import Loading from "./components/Loading";
 import "./assets/tailwind.css";
 import GuestLayout from './Guest/pages/Guest';
 import Home from "./Guest/pages/Home";
+import Notes from "./pages/notes";
 //import Dashboard from "./pages/Dashboard";
 //import Orders from "./pages/Order";
 //import Customers from "./pages/Customer";
@@ -40,6 +41,7 @@ function App() {
             <Route path="/customers" element={<Customers />} />
             <Route path="/products" element={<Customers />} />
             <Route path="/products/:id" element={<ProductDetail />} />
+            <Route path="/notes" element={<Notes />} />
             <Route path="*" element={<NotFound />} />
           </Route>
 
